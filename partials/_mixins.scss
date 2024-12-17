@@ -1,0 +1,12 @@
+@mixin center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin image-resets {
+	display: block;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+}

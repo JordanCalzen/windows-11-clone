@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("../images/default_dark_compressed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100%;
+  background-color: rgba(4, 18, 34, 0.7607843137);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  position: relative;
+}
+.hero .deskIcons {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  gap: 1rem;
+  padding: 2rem 2rem;
+}
+.hero .deskIcons .btn {
+  background: 0;
+  border-radius: 0;
+  width: 85px;
+  height: 85px;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .deskIcons .btn img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+}
+.hero .deskIcons .btn p {
+  color: #ced0d3;
+  font-size: 0.7rem;
+}
+.hero .deskIcons .btn:hover {
+  background-color: #0a294f;
+}
+.hero .taskBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.459);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+  height: 7vh;
+}
+.hero .taskBar .taskIcons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding-left: 10rem;
+}
+.hero .taskBar .taskIcons .taskIcon {
+  background: 0;
+  border: 0;
+}
+.hero .taskBar .taskIcons .taskIcon img {
+  width: 30px;
+}
+.hero .taskBar .accessibility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+.hero .taskBar .accessibility .iconAccess .access {
+  border: 0;
+  background: 0;
+  color: white;
+  font-size: 1.3rem;
+}
+.hero .taskBar .accessibility .dateTime li {
+  list-style: none;
+  color: white;
+  text-align: end;
+}
+
+.changeMode .hero {
+  background-image: url("../images/default_light_compressed.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.changeMode .hero .deskIcons .btn p {
+  color: black;
+  font-size: 0.7rem;
+}
+.changeMode .hero .deskIcons .btn:hover {
+  background-color: white;
+}
+.changeMode .hero .taskBar {
+  background-color: rgba(255, 255, 255, 0.637);
+  -webkit-backdrop-filter: blur(3px);
+          backdrop-filter: blur(3px);
+}
+.changeMode .hero .taskBar .accessibility .iconAccess .access {
+  color: black;
+}
+.changeMode .hero .taskBar .accessibility .dateTime li {
+  color: black;
+}/*# sourceMappingURL=main.css.map */
