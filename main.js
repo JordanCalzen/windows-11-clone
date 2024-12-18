@@ -6,6 +6,14 @@ const windows = document.querySelector(".windows");
 
 const windowIcon = document.querySelector(".windowIcon");
 
+const login = document.querySelector(".login");
+
+const yourPassword = document.querySelector("#yourPassword");
+
+const enterBtn = document.querySelector(".enter");
+
+const spinner = document.querySelector(".spin-ner");
+
 if (localStorage.getItem("theme") === "dark") {
 	document.body.classList.add("changeMode");
 }
@@ -29,4 +37,17 @@ modeSwitch.addEventListener("click", (e) => {
 
 windowIcon.addEventListener("click", () => {
 	windows.classList.toggle("showWindow");
+});
+
+enterBtn.addEventListener("click", (e) => {
+	e.preventDefault();
+	const password = yourPassword.value;
+	if (password === "12345") {
+		login.style.display = "none";
+		setTimeout(function () {
+			spinner.style.display = "none";
+		}, 3000);
+	} else {
+		alert("Enter correct password");
+	}
 });

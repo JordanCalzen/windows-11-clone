@@ -19,6 +19,100 @@ body {
           backdrop-filter: blur(3px);
   position: relative;
 }
+.hero .login {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.671)), url(../images/bc.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+  z-index: 10;
+}
+.hero .login form input {
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+}
+.hero .login form .enter {
+  font-size: 1.2rem;
+  padding: 0.3rem 0.5rem;
+  border: 0;
+  border-radius: 5px;
+}
+.hero .login img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.hero .spin-ner {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.418), rgba(0, 0, 0, 0.671)), url(../images/default_light_compressed.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .spin-ner .loader {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  color: white;
+  position: relative;
+}
+.hero .spin-ner .loader .spinner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  border: 10px solid transparent;
+  position: absolute;
+  mix-blend-mode: overlay;
+  animation: rotate var(--duration) var(--timing) infinite;
+}
+.hero .spin-ner .loader .spinner1 {
+  border-right-color: orange;
+  --duration: 1.5s;
+  --timing: ease-in-out;
+}
+.hero .spin-ner .loader .spinner2 {
+  border-left-color: greenyellow;
+  --duration: 2s;
+  --timing: ease-in;
+}
+.hero .spin-ner .loader .spinner3 {
+  border-top-color: aquamarine;
+  --duration: 1s;
+  --timing: ease-in-out;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .hero .deskIcons {
   display: grid;
   grid-template-columns: 90px 90px;
