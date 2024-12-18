@@ -36,8 +36,8 @@ body {
   z-index: 10;
 }
 .hero .login form input {
-  font-size: 1.2rem;
-  padding: 0.3rem 0.5rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.5rem;
   outline: 0;
   border: 0;
   border-radius: 5px;
@@ -47,6 +47,7 @@ body {
   padding: 0.3rem 0.5rem;
   border: 0;
   border-radius: 5px;
+  display: none;
 }
 .hero .login img {
   display: block;
@@ -54,8 +55,8 @@ body {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 }
 .hero .spin-ner {
