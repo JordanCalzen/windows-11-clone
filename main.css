@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .hero {
   background-image: url("../images/default_dark_compressed.jpg");
   background-repeat: no-repeat;
@@ -52,7 +56,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  justify-content: space-between;
+  justify-content: end;
+  gap: 15rem;
   position: fixed;
   width: 100%;
   bottom: 0;
@@ -65,7 +70,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 1rem;
   padding-left: 10rem;
 }
 .hero .taskBar .taskIcons .taskIcon {
@@ -93,6 +98,126 @@
   color: white;
   text-align: end;
 }
+.hero .windows {
+  background: rgba(0, 0, 0, 0.753);
+  width: 34rem;
+  height: 35rem;
+  position: absolute;
+  top: 2rem;
+  left: 25rem;
+  display: none;
+}
+.hero .windows .window {
+  height: 90%;
+  padding: 1rem 2rem;
+}
+.hero .windows .window form span img {
+  width: 30px;
+}
+.hero .windows .window .pinned {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.hero .windows .window .pinned h3 {
+  color: white;
+  font-size: 0.8rem;
+}
+.hero .windows .window .apps {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+.hero .windows .window .apps .taskIcon {
+  gap: 5px;
+  background: 0;
+  border: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .windows .window .apps .taskIcon img {
+  display: block;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60%;
+  width: 60%;
+  margin: auto;
+}
+.hero .windows .window .apps .taskIcon p {
+  color: #ced0d3;
+  font-size: 0.7rem;
+}
+.hero .windows .window .apps .taskIcon:hover {
+  background: #0a294f;
+}
+.hero .windows .window .recommended {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.hero .windows .window .recommended h3 {
+  color: white;
+  font-size: 0.8rem;
+}
+.hero .windows .window .recommededApps {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+  gap: 0.5rem;
+}
+.hero .windows .window .recommededApps .recommendedApp {
+  display: flex;
+}
+.hero .windows .window .recommededApps .recommendedApp .recommText p {
+  font-size: 0.7rem;
+}
+.hero .windows .window .recommededApps .recommendedApp .recommText span {
+  display: block;
+  font-size: 0.7rem;
+}
+.hero .windows .bottomWindow {
+  height: 10%;
+  background-color: rgba(0, 0, 255, 0.349);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  padding: 0.5rem;
+}
+.hero .windows .bottomWindow .profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .windows .bottomWindow .profile .prof {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: auto 0;
+}
+.hero .windows .bottomWindow .profile .prof img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.hero .windows .bottomWindow .profile .prof p {
+  color: white;
+}
+.hero .windows .bottomWindow .profile i {
+  color: white;
+  font-size: 1.2rem;
+}
+.hero .showWindow {
+  display: block;
+}
 
 .changeMode .hero {
   background-image: url("../images/default_light_compressed.jpg");
@@ -102,7 +227,6 @@
 }
 .changeMode .hero .deskIcons .btn p {
   color: black;
-  font-size: 0.7rem;
 }
 .changeMode .hero .deskIcons .btn:hover {
   background-color: white;

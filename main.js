@@ -2,6 +2,10 @@ const modeSwitch = document.querySelector(".modeSwitch");
 
 const search = document.querySelector(".search");
 
+const windows = document.querySelector(".windows");
+
+const windowIcon = document.querySelector(".windowIcon");
+
 if (localStorage.getItem("theme") === "dark") {
 	document.body.classList.add("changeMode");
 }
@@ -21,4 +25,8 @@ modeSwitch.addEventListener("click", (e) => {
 		modeSwitch.innerHTML = `<img src="./images/day.png" alt="" />`;
 		search.innerHTML = `<img src="./images/search-dark.svg" alt="" />`;
 	}
+});
+
+windowIcon.addEventListener("click", () => {
+	windows.classList.toggle("showWindow");
 });
